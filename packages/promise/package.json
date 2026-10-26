@@ -1,0 +1,12 @@
+{
+  "name": "@frontend-by-hand/promise",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/promise.js",
+  "types": "dist/promise.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test promise.test.cjs",
+    "demo": "npm run build && node dist/demo.js"
+  }
+}
