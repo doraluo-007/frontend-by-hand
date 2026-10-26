@@ -1,0 +1,21 @@
+{
+  "name": "frontend-by-hand",
+  "version": "0.1.0",
+  "private": true,
+  "description": "前端手写实验室：用代码逐步理解 JavaScript 与前端核心机制。",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run build && npm run test --workspaces --if-present",
+    "demo:promise": "npm run demo --workspace=@frontend-by-hand/promise"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
